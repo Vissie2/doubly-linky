@@ -26,7 +26,7 @@ const list = new DoublyLinkedList(array);
 
 ## API
 
-As documented in [API.md](API.md).
+As documented in [API.md](https://github.com/Vissie2/doubly-linky/blob/master/API.md).
 
 ## License
 
