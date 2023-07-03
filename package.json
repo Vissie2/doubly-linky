@@ -1,6 +1,6 @@
 {
   "name": "doubly-linky",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A tiny (around 2.1 kb, 850 bytes gzipped) doubly linked list.",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
