@@ -10,8 +10,7 @@
     }
   },
   "files": [
-    "lib",
-    "API.md"
+    "lib"
   ],
   "type": "module",
   "scripts": {
