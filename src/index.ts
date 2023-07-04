@@ -275,6 +275,19 @@ export class DoublyLinkedList<T> {
   }
 
   /**
+   * Removes all items from the list.
+   *
+   * @returns void
+   */
+  public clear() {
+    // Remove the head and tail.
+    this.head = this.tail = undefined;
+    // Reset length.
+    this.length = 0;
+    // At this point the garbage collector should do its job.
+  }
+
+  /**
    * Gets the value of the item at the specified `index`.
    *
    * @param index - The index from the item.

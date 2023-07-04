@@ -21,6 +21,7 @@ A doubly linked list.
 ### Methods
 
 - [append](API.md#append)
+- [clear](API.md#clear)
 - [get](API.md#get)
 - [getHead](API.md#gethead)
 - [getTail](API.md#gettail)
@@ -42,8 +43,8 @@ Appends the specified items to the list.
 #### Type parameters
 
 | Name |
-| :--- |
-| `T`  |
+| :------ |
+| `T` |
 
 #### Parameters
 
@@ -54,7 +55,7 @@ Appends the specified items to the list.
 
 #### Defined in
 
-[index.ts:39](https://github.com/Vissie2/doubly-linky/blob/17d672b/src/index.ts#L39)
+[index.ts:39](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L39)
 
 ## Properties
 
@@ -64,7 +65,7 @@ Appends the specified items to the list.
 
 #### Defined in
 
-[index.ts:31](https://github.com/Vissie2/doubly-linky/blob/17d672b/src/index.ts#L31)
+[index.ts:31](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L31)
 
 ## Methods
 
@@ -76,9 +77,9 @@ Appends (pushes) a new item to the list.
 
 #### Parameters
 
-| Name    | Type | Description          |
-| :------ | :--- | :------------------- |
-| `value` | `T`  | The value of a node. |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `T` | The value of a node. |
 
 #### Returns
 
@@ -88,9 +89,27 @@ void
 
 #### Defined in
 
-[index.ts:147](https://github.com/Vissie2/doubly-linky/blob/17d672b/src/index.ts#L147)
+[index.ts:147](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L147)
 
----
+___
+
+### clear
+
+▸ **clear**(): `void`
+
+Removes all items from the list.
+
+#### Returns
+
+`void`
+
+void
+
+#### Defined in
+
+[index.ts:282](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L282)
+
+___
 
 ### get
 
@@ -105,8 +124,8 @@ This exception is thrown if `index` doesn't exist in the list.
 
 #### Parameters
 
-| Name    | Type     | Description              |
-| :------ | :------- | :----------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `index` | `number` | The index from the item. |
 
 #### Returns
@@ -117,9 +136,9 @@ The value of the item.
 
 #### Defined in
 
-[index.ts:286](https://github.com/Vissie2/doubly-linky/blob/17d672b/src/index.ts#L286)
+[index.ts:299](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L299)
 
----
+___
 
 ### getHead
 
@@ -135,9 +154,9 @@ The value of the item or `undefined`.
 
 #### Defined in
 
-[index.ts:296](https://github.com/Vissie2/doubly-linky/blob/17d672b/src/index.ts#L296)
+[index.ts:309](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L309)
 
----
+___
 
 ### getTail
 
@@ -153,9 +172,9 @@ The value of the item or `undefined`.
 
 #### Defined in
 
-[index.ts:305](https://github.com/Vissie2/doubly-linky/blob/17d672b/src/index.ts#L305)
+[index.ts:318](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L318)
 
----
+___
 
 ### popHead
 
@@ -171,9 +190,9 @@ The value of the item or `undefined`.
 
 #### Defined in
 
-[index.ts:209](https://github.com/Vissie2/doubly-linky/blob/17d672b/src/index.ts#L209)
+[index.ts:209](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L209)
 
----
+___
 
 ### popTail
 
@@ -189,9 +208,9 @@ The value of the item or `undefined`.
 
 #### Defined in
 
-[index.ts:226](https://github.com/Vissie2/doubly-linky/blob/17d672b/src/index.ts#L226)
+[index.ts:226](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L226)
 
----
+___
 
 ### prepend
 
@@ -201,9 +220,9 @@ Prepends (unshifts) a new item to the list.
 
 #### Parameters
 
-| Name    | Type | Description          |
-| :------ | :--- | :------------------- |
-| `value` | `T`  | The value of a node. |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `T` | The value of a node. |
 
 #### Returns
 
@@ -213,9 +232,9 @@ void
 
 #### Defined in
 
-[index.ts:119](https://github.com/Vissie2/doubly-linky/blob/17d672b/src/index.ts#L119)
+[index.ts:119](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L119)
 
----
+___
 
 ### pushAt
 
@@ -231,9 +250,9 @@ This exception is thrown if `index` doesn't exist in the list.
 
 #### Parameters
 
-| Name    | Type     | Description                           |
-| :------ | :------- | :------------------------------------ |
-| `value` | `T`      | The value of the item.                |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value` | `T` | The value of the item. |
 | `index` | `number` | The index where the node will end up. |
 
 #### Returns
@@ -244,9 +263,9 @@ void
 
 #### Defined in
 
-[index.ts:180](https://github.com/Vissie2/doubly-linky/blob/17d672b/src/index.ts#L180)
+[index.ts:180](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L180)
 
----
+___
 
 ### remove
 
@@ -261,8 +280,8 @@ This exception is thrown if `index` doesn't exist in the list.
 
 #### Parameters
 
-| Name    | Type     | Description            |
-| :------ | :------- | :--------------------- |
+| Name | Type | Description |
+| :------ | :------ | :------ |
 | `index` | `number` | The index of the node. |
 
 #### Returns
@@ -273,9 +292,9 @@ void
 
 #### Defined in
 
-[index.ts:247](https://github.com/Vissie2/doubly-linky/blob/17d672b/src/index.ts#L247)
+[index.ts:247](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L247)
 
----
+___
 
 ### toArray
 
@@ -291,4 +310,4 @@ An array of all the values in the list.
 
 #### Defined in
 
-[index.ts:314](https://github.com/Vissie2/doubly-linky/blob/17d672b/src/index.ts#L314)
+[index.ts:327](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L327)
