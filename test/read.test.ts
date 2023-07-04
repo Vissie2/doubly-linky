@@ -2,7 +2,7 @@ import { IndexError } from '~/errors';
 import { DoublyLinkedList } from '~/index';
 
 describe('Reading', () => {
-  it('constructor', () => {
+  it('constructor spread', () => {
     const list = new DoublyLinkedList(1, 2, 3);
 
     const [one, two, three] = list.toArray();
@@ -10,6 +10,29 @@ describe('Reading', () => {
     expect(one).toBe(1);
     expect(two).toBe(2);
     expect(three).toBe(3);
+  });
+
+  it('constructor array', () => {
+    const list = new DoublyLinkedList([1, 2, 3]);
+
+    const [one, two, three] = list.toArray();
+
+    expect(one).toBe(1);
+    expect(two).toBe(2);
+    expect(three).toBe(3);
+  });
+
+  it('constructor array and spread', () => {
+    const list = new DoublyLinkedList([1, 2, 3], 4, 5, 6);
+
+    const [one, two, three, four, five, six] = list.toArray();
+
+    expect(one).toBe(1);
+    expect(two).toBe(2);
+    expect(three).toBe(3);
+    expect(four).toBe(4);
+    expect(five).toBe(5);
+    expect(six).toBe(6);
   });
 
   it('get', () => {
