@@ -23,4 +23,17 @@ describe('Removing', () => {
 
     expect(tail).toBe(3);
   });
+
+  it('clear', () => {
+    const list = new DoublyLinkedList(1, 2, 3);
+    list.clear();
+
+    expect(list.length).toBe(0);
+    expect(() => list.get(0)).toThrow(IndexError);
+    expect(() => list.get(1)).toThrow(IndexError);
+    expect(() => list.get(2)).toThrow(IndexError);
+    expect(list.getHead()).toBeUndefined();
+    expect(list.getTail()).toBeUndefined();
+    expect(list.toArray()).toEqual([]);
+  });
 });
