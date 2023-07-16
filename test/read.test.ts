@@ -63,6 +63,26 @@ describe('Reading', () => {
     expect(tail).toBe(3);
   });
 
+  it('findFirst', () => {
+    const list = new DoublyLinkedList(1, 2, 3);
+
+    const one = list.findFirst((value) => {
+      return value === 1;
+    });
+
+    const two = list.findFirst((value) => {
+      return value === 2;
+    });
+
+    const three = list.findFirst((value) => {
+      return value === 3;
+    });
+
+    expect(one).toBe(1);
+    expect(two).toBe(2);
+    expect(three).toBe(3);
+  });
+
   it('toArray', () => {
     const list = new DoublyLinkedList(1, 2, 3);
     const array = list.toArray();
