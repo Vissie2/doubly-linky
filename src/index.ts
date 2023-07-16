@@ -320,6 +320,26 @@ export class DoublyLinkedList<T> {
   }
 
   /**
+   * Finds a item in the list by a predicate function.
+   *
+   * @param predicate - A predicate function.
+   * @returns The node or `undefined`.
+   */
+  public findFirst(predicate: (value: T) => boolean) {
+    let node: Node<T> | undefined = this.head;
+
+    while (node) {
+      if (predicate(node.value)) {
+        return node.value;
+      }
+
+      node = node.next;
+    }
+
+    return null;
+  }
+
+  /**
    * Retrieves an array of all the values in the list.
    *
    * @returns An array of all the values in the list.
