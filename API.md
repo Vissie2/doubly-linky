@@ -22,6 +22,7 @@ A doubly linked list.
 
 - [append](API.md#append)
 - [clear](API.md#clear)
+- [findFirst](API.md#findfirst)
 - [get](API.md#get)
 - [getHead](API.md#gethead)
 - [getTail](API.md#gettail)
@@ -55,7 +56,7 @@ Appends the specified items to the list.
 
 #### Defined in
 
-[index.ts:39](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L39)
+[index.ts:39](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L39)
 
 ## Properties
 
@@ -65,7 +66,7 @@ Appends the specified items to the list.
 
 #### Defined in
 
-[index.ts:31](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L31)
+[index.ts:31](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L31)
 
 ## Methods
 
@@ -89,7 +90,7 @@ void
 
 #### Defined in
 
-[index.ts:147](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L147)
+[index.ts:147](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L147)
 
 ___
 
@@ -107,7 +108,31 @@ void
 
 #### Defined in
 
-[index.ts:282](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L282)
+[index.ts:282](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L282)
+
+___
+
+### findFirst
+
+▸ **findFirst**(`predicate`): ``null`` \| `T`
+
+Finds a item in the list by a predicate function.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `predicate` | (`value`: `T`) => `boolean` | A predicate function. |
+
+#### Returns
+
+``null`` \| `T`
+
+The item or `null`.
+
+#### Defined in
+
+[index.ts:328](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L328)
 
 ___
 
@@ -136,7 +161,7 @@ The value of the item.
 
 #### Defined in
 
-[index.ts:299](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L299)
+[index.ts:299](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L299)
 
 ___
 
@@ -154,7 +179,7 @@ The value of the item or `undefined`.
 
 #### Defined in
 
-[index.ts:309](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L309)
+[index.ts:309](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L309)
 
 ___
 
@@ -172,7 +197,7 @@ The value of the item or `undefined`.
 
 #### Defined in
 
-[index.ts:318](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L318)
+[index.ts:318](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L318)
 
 ___
 
@@ -190,7 +215,7 @@ The value of the item or `undefined`.
 
 #### Defined in
 
-[index.ts:209](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L209)
+[index.ts:209](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L209)
 
 ___
 
@@ -208,7 +233,7 @@ The value of the item or `undefined`.
 
 #### Defined in
 
-[index.ts:226](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L226)
+[index.ts:226](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L226)
 
 ___
 
@@ -232,7 +257,7 @@ void
 
 #### Defined in
 
-[index.ts:119](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L119)
+[index.ts:119](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L119)
 
 ___
 
@@ -263,7 +288,7 @@ void
 
 #### Defined in
 
-[index.ts:180](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L180)
+[index.ts:180](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L180)
 
 ___
 
@@ -292,7 +317,7 @@ void
 
 #### Defined in
 
-[index.ts:247](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L247)
+[index.ts:247](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L247)
 
 ___
 
@@ -310,4 +335,4 @@ An array of all the values in the list.
 
 #### Defined in
 
-[index.ts:327](https://github.com/Vissie2/doubly-linky/blob/77c5c53/src/index.ts#L327)
+[index.ts:347](https://github.com/Vissie2/doubly-linky/blob/af9ed24/src/index.ts#L347)
