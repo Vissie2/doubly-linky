@@ -323,7 +323,7 @@ export class DoublyLinkedList<T> {
    * Finds a item in the list by a predicate function.
    *
    * @param predicate - A predicate function.
-   * @returns The node or `undefined`.
+   * @returns The item or `null`.
    */
   public findFirst(predicate: (value: T) => boolean) {
     let node: Node<T> | undefined = this.head;
